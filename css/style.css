@@ -7,12 +7,13 @@
 h1 {
     font-size: 3rem;
     font-family: Arial, Helvetica, sans-serif;
-    color: white;
+    color: #c90100;
 }
 
-p {
+p{
+    font-size: 1rem;
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 1.2rem;
+    color: #4a5541;
 }
 
 img {
@@ -21,7 +22,6 @@ img {
 }
 
 #header {
-    background-color: black;
     padding: 30px;
     text-align: center;
 }
@@ -39,28 +39,6 @@ img {
     /* makes child column have equal width, regardless of individual content width */
     flex: 1;
     /* because box sixing = border box, padding is counted as part of the overall width of the column */
-    padding: 10px;
-}
-
-#col1 {
-    background-color: rgb(240, 227, 174);
-}
-
-#col2 {
-    background-color: rgb(202, 235, 175);
-}
-
-#col3 {
-    background-color: lightpink;
-}
-
-#col4 {
-    background-color: lavender;
-}
-
-#footer {
-    padding: 10px;
-    text-align: center;
 }
 
 @media screen and (max-width: 900px) {
