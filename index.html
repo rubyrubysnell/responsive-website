@@ -12,13 +12,19 @@
 
   <div id="header">
     <h1>Snake Website</h1>
-    <p>Change the width of your browser window to move the snake</p>
+    <p>Change the width of your browser window to make the snake wiggle</p>
   </div>
+  <!-- flexbox organises content in a row by default -->
   <div id="row">
+    <!-- columns will be neturally formed by the flex wrap -->
     <div id="col1" class="column">
+      <!-- assigning different images for display at different viewport widths -->
       <picture>
+        <!-- display this image when the viewport is above 900px wide (desktop width) -->
         <source media="(min-width: 900px)" srcset="images/Snake1Slices/Snake1_01.jpg">
+        <!-- display this image when the viewport is below 500px wide (mobile width) -->
         <source media="(max-width: 500px)" srcset="images/Snake3Slices/Snake3_01.jpg">
+        <!-- if viewport is between 900px and 500px wide, display this image -->
         <img src="images/Snake2Slices/Snake2_01.jpg">
       </picture>
       <picture>

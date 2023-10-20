@@ -8,6 +8,7 @@ h1 {
     font-size: 3rem;
     font-family: Arial, Helvetica, sans-serif;
     color: #c90100;
+    padding-bottom: 20px;
 }
 
 p{
@@ -31,31 +32,33 @@ img {
     display: flex;
     /* use row for initial layout */
     flex-direction: row;
-    /* creates an extra row at smaller, tablet screen size */
+    /* creates extra rows */
     flex-wrap: wrap;
 }
 
 .column {
     /* makes child column have equal width, regardless of individual content width */
     flex: 1;
-    /* because box sixing = border box, padding is counted as part of the overall width of the column */
 }
 
 @media screen and (max-width: 900px) {
     .column {
-        /* make the minimum width of a column 50% of its parent */
+        /* if the viewport is below 900px, make the minimum width of a column 50% of its parent (the row) - i.e. reduce from 4 to 2 columns */
         min-width: 50%;
     }
 }
 
 @media screen and (max-width: 500px) {
     .column {
+        /* if the viewport is below 500px, make the minimum width of a column 100% of its parent (the row) - i.e. reduce to one long column */
         min-width: 100%
     }
     .row{
+        /* change the flex direction to column */
         flex-direction: column;
     }
     h1{
+        /* increase the font sizes to improve legibility on smaller screens */
         font-size: 4rem;
     }
     p{
