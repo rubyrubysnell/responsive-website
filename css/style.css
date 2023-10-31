@@ -20,6 +20,7 @@ p{
 img {
     /* required to work with the flex: 1 column setting */
     width: 100%;
+    display: block;
 }
 
 #header {
